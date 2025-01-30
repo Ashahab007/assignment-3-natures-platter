@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- install tailwind css with daisyui -->
+    <!--! install tailwind css with daisyui -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
       rel="stylesheet"
@@ -11,20 +11,27 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Custom color from tailwind cdn -->
+    <!--! Custom color from tailwind cdn -->
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
               clifford: "#da373d",
+              "primary-color": "#179800",
             },
           },
         },
       };
     </script>
 
-    <!-- Google fonts links-->
+    <!--! font awesome -->
+    <script
+      src="https://kit.fontawesome.com/f0cdd331d3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--! Google fonts links-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,5 +52,101 @@
 
     <title>Natures Platter</title>
   </head>
-  <body></body>
+  <body class="font-sora">
+    <header class="bg-gradient-to-t from-white to-[#EFEBE3]">
+      <!--! navbar section -->
+      <section class="w-11/12 mx-auto">
+        <div class="navbar bg-transparent flex justify-between items-center">
+          <div>
+            <a
+              ><img
+                class="w-20 sm:w-full"
+                src="./assets/logo-header.png"
+                alt=""
+                srcset=""
+            /></a>
+          </div>
+
+          <!--! nav center -->
+          <div class="sm:flex justify-center gap-7 hidden sm:visible">
+            <div>
+              <a href="">Product</a>
+            </div>
+            <div>
+              <a href="">Services</a>
+            </div>
+            <div>
+              <a href="">Contact us</a>
+            </div>
+          </div>
+
+          <!-- ! nav button, search, cart -->
+          <div class="sm:flex justify-center gap-7 hidden sm:visible">
+            <div>
+              <a href="">
+                <i
+                  class="fa-solid fa-magnifying-glass fa-xl text-[#111111]"
+                ></i>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i
+                  class="fa-solid fa-cart-shopping fa-flip-horizontal fa-xl text-[#111111]"
+                ></i>
+              </a>
+            </div>
+            <button class="btn btn-outline btn-success text-black w-32">
+              Login
+            </button>
+            <button class="btn btn-success text-white w-40">Register</button>
+          </div>
+
+          <!--! hamburg menu -->
+          <div class="visible sm:hidden">
+            <button class="btn btn-square btn-ghost text-primary-color">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block h-5 w-5 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <hr class="border-primary-color sm:border-none" />
+
+      <!--! banner section -->
+      <section class="w-11/12 mx-auto my-10 sm:my-32">
+        <div class="text-center space-y-8 sm:space-y-10">
+          <h1 class="text-4xl sm:text-6xl font-semibold leading-snug">
+            Freshness
+            <span class="text-primary-color"
+              >You Can
+              <br />
+              Count</span
+            >
+            On, Prices You’ll Love!
+          </h1>
+          <p class="sm:text-xl">
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry
+            <br />
+            staples, we’ve got you covered every day!
+          </p>
+          <div class="flex justify-center items-center">
+            <img src="./assets/hero-vegetables.png" />
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
 </html>
