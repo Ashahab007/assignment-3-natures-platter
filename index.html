@@ -220,10 +220,12 @@
 
       <!-- ! Popular Section -->
       <section class="my-10 sm:my-32 bg-secondary-color-bg h-[80vh]">
-        <div class="w-11/12 mx-auto">
-          <h1>Popular Products</h1>
-          <div class="flex">
-            <!-- ! popular card 1 -->
+        <div class="w-11/12 mx-auto py-8">
+          <h1 class="text-primary-color text-3xl font-bold my-7">
+            Popular Products
+          </h1>
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-3">
+            <!-- ! popular offer card -->
             <div
               class="h-[50vh] grow-0 rounded-lg bg-gradient-to-br from-[#179800] to-white relative p-10"
             >
@@ -233,16 +235,43 @@
                 Discover a world of treats, toys, and <br />
                 essentials handpicked for
               </p>
-              <button class="my-5">Buy Now</button>
+              <button class="my-5 py-2 px-4 bg-white rounded-md">
+                Buy Now
+              </button>
               <div
-                class="absolute h-40 w-40 sm:h-56 sm:w-56 left-36 bottom-[-14px]"
+                class="absolute h-40 w-40 left-56 bottom-[-14px] sm:h-56 sm:w-56 sm:left-64 sm:bottom-[-14px]"
               >
                 <img src="./assets/vegetable-offer.png" />
               </div>
               <!-- </div> -->
             </div>
-            <!-- ! popular card 2 -->
-            <div class="grow"></div>
+            <!-- ! popular product card -->
+            <div class="col-span-2">
+              <div class="grid grid-cols-3">
+                <!--! popular product card 1 -->
+                <div
+                  class="flex bg-white justify-center items-center rounded-lg gap-4 py-3"
+                >
+                  <div>
+                    <img
+                      class="bg-secondary-color-bg rounded-lg"
+                      src="./assets/onion.png"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div class="flex gap-2">
+                      <div>
+                        <i class="fa-solid fa-star" style="color: #ffc107"></i>
+                      </div>
+                      <h1>4.5</h1>
+                    </div>
+                    <h1 class="font-bold">Onion 1 Kg</h1>
+                    <h3>$39.99</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
