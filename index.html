@@ -49,6 +49,24 @@
       .font-poppins {
         font-family: "Poppins", serif;
       }
+
+      /* Animation */
+
+      @keyframes b1_g1 {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.3);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      #b1_g1 {
+        animation: b1_g1 2s ease 0s infinite normal none;
+      }
     </style>
 
     <title>Natures Platter</title>
@@ -123,7 +141,15 @@
       <section class="w-11/12 mx-auto my-10 sm:my-32">
         <!-- bg-[url('./assets/hero-vegetables.png')] h-[120vh] bg-no-repeat bg-[50%_100%] bg-contain -->
 
-        <div class="text-center space-y-8 sm:space-y-10">
+        <div class="text-center space-y-8 sm:space-y-10 relative">
+          <div
+            id="b1_g1"
+            class="absolute sm:w-[150px] w-[80px] sm:-top-[80px] top-[50%]"
+          >
+            <a href="#bogo">
+              <img src="./assets/Bogo logo_2.png" alt="" srcset="" />
+            </a>
+          </div>
           <h1 class="text-4xl sm:text-6xl font-semibold leading-snug">
             Freshness
             <span class="text-primary-color"
@@ -213,7 +239,7 @@
       </section>
 
       <!-- ! Bogo offer -->
-      <section class="w-11/12 mx-auto my-10 sm:my-32">
+      <section id="bogo" class="w-11/12 mx-auto my-10 sm:my-32">
         <h1 class="text-primary-color text-3xl font-bold my-8 sm:my-14">
           Buy 1 Get 1
         </h1>
